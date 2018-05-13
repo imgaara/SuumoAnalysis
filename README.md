@@ -1,26 +1,27 @@
-# Suumo����Ԥ��[![PyPI Version]][PyPI] [![Build Status]][Travis CI] [![Coverage Status]][Coverage]
-## ���
-��������һ���򵥵���ҳ���档��ȡSuumo.jp��վ�������Ϣ����ʹ��RandomForestģ�ͽ��������ܷ��õ�Ԥ�⡣
-## �ļ��ṹ
-- Scraping.py			-����
-	 Data_Cleaning.py		-������ϴ
-	 Data_OneHotEncode.py	-�������ݶ��ȱ���
-	 Train_RF.py			-ѵ��ģ��
-	 Data_Query.py			-������ݲ�ѯ
-	 Data_Graph.py			-ͼ�λ�
+# Suumo分析预测
+## 简介
+爬取Suumo.jp网站的房价信息，使用RandomForest模型进行两年总费用的预测。
+## 文件结构
+- Scraping.py			-爬虫
+	 Data_Cleaning.py		-数据清洗
+	 Data_OneHotEncode.py	-特征数据独热编码
+	 Train_RF.py			-训练模型
+	 Data_Query.py			-输出数据查询
+	 Data_Graph.py			-图形化
 ## update
-**[2018/3/11|�޸�|v1.02]**:
+**[2018/5/13|重新上传]**
+**[2018/3/11|修复|v1.02]**:
 	
-	�����ڴ��Ż�Data_Optimization.py
+	增加内存优化Data_Optimization.py
 
-**[2018/2/26|�޸�|v1.01]**:
+**[2018/2/26|修复|v1.01]**:
 
-	�޸�һ������¥�����--->Data_Cleaning.py
+	修复一户建的楼层错误--->Data_Cleaning.py
 	
-	�޸��˶��ȵ�ʵ�ַ���--->Data_OneHotEncode.py
+	修改了独热的实现方法--->Data_OneHotEncode.py
 	
-	��д���η���--->Train_RF.py
+	重写调参方法--->Train_RF.py
 
-**[2018/2/24|�Ż�|v1.0]**:
+**[2018/2/24|优化|v1.0]**:
 
-	��һ�����ð汾
+	第一个可用版本
